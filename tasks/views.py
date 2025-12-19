@@ -1,5 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+
 # Create your views here.
-def show_tasks(request):
-    return HttpResponse("this is show tasks page")
+def manager_dashboard(request):
+    return render(request, "manager-dashboard.html")
+
+
+def user_dashboard(request):
+    return render(request, "user-dashboard.html")
