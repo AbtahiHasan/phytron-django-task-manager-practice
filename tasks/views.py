@@ -8,3 +8,10 @@ def manager_dashboard(request):
 
 def user_dashboard(request):
     return render(request, "user-dashboard.html")
+
+
+def create_task(request):   
+    return render(request, "create-task.html")
+
+def test( request): 
+    return render(request, 'test.html')
